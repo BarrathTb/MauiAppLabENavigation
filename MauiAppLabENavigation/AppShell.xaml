@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiAppLabENavigation.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:MauiAppLabENavigation.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    Title="MauiAppLabENavigation">
+
+    <FlyoutItem Title="BMI Calculator" Icon="calculator.png">
+        <Tab>
+            <ShellContent Route="BMIRoute" ContentTemplate="{DataTemplate pages:BMIPage}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Morse Code" Icon="calculator.png">
+        <Tab>
+            <ShellContent Route="MorseCodeRoute" ContentTemplate="{DataTemplate pages:MorseCode}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Alcohol Age Calculator" Icon="calculator.png">
+        <Tab>
+            <ShellContent Route="AlcoholRoute" ContentTemplate="{DataTemplate pages:Alcohol}" />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>

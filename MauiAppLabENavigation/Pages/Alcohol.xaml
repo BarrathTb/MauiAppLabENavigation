@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<maui:ContentPage xmlns:maui="http://schemas.microsoft.com/dotnet/2021/maui"
+                  xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="MauiAppLabENavigation.Pages.Alcohol">
+
+    <maui:ContentPage.Content>
+        <maui:StackLayout BackgroundColor="#F8F8F8">
+            <maui:Frame BackgroundColor="#212121" CornerRadius="10" Margin="20" HasShadow="True">
+                <maui:Label Text="Are You Old Enough to Drink?" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </maui:Frame>
+
+            <maui:StackLayout Spacing="15">
+                <maui:Frame BackgroundColor="#333333" CornerRadius="10" HasShadow="True" Margin="20">
+                    <maui:Entry x:Name="AgeEntry" Placeholder="Enter your age"  FontSize="16" TextColor="White"/>
+                </maui:Frame>
+
+                <maui:Button  Text="Calculate" Clicked="CalculateButton_Clicked" BackgroundColor="#212121" TextColor="White" FontSize="20" CornerRadius="10" Margin="20" />
+            </maui:StackLayout>
+
+            <maui:Label x:Name="ResultLabel" TextColor="Black" FontSize="24" HorizontalTextAlignment="Center" Margin="20"/>
+
+            <maui:Frame BackgroundColor="White" CornerRadius="10" HasShadow="True" Margin="20">
+                <maui:Picker x:Name="CountryPicker"
+                    Title="Select a Country"
+                    FontSize="16"
+                    Margin="20"/>
+            </maui:Frame>
+        </maui:StackLayout>
+    </maui:ContentPage.Content>
+</maui:ContentPage>

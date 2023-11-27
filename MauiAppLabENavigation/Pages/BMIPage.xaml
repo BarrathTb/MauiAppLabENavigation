@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<maui:ContentPage  xmlns:maui="http://schemas.microsoft.com/dotnet/2021/maui/design" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppLabENavigation.Pages.BMIPage">
+    <maui:ContentPage.Content>
+        <maui:ScrollView>
+            <maui:VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+                <maui:Frame Padding="24" CornerRadius="10" Margin="10" BackgroundColor="OrangeRed">
+                    <maui:Label Text="The BMI Calculator" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+                </maui:Frame>
+                <maui:Label x:Name="Out_Text" Text="Find Your BMI" HorizontalTextAlignment="Center" FontSize="Title" Padding="30,10,30,10"/>
+
+                <maui:Button Text="Click Me" Clicked="Button_Clicked" BackgroundColor="blue" CornerRadius="10" Margin="10" ></maui:Button>
+                <maui:Editor x:Name="In_Weight" Placeholder="Please Enter Your Weight in pounds" TextColor="Black"></maui:Editor>
+                <maui:Editor x:Name="In_Height" Placeholder="Please Enter Your Height in inches" TextColor="Black"></maui:Editor>
+
+            </maui:VerticalStackLayout>
+        </maui:ScrollView>
+    </maui:ContentPage.Content>
+</maui:ContentPage>
