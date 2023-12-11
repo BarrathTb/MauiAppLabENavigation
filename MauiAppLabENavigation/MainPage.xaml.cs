@@ -1,12 +1,12 @@
 ﻿namespace MauiAppLabENavigation
 {
-	public partial class MainPage : Shell
-	{
-		
+    public partial class MainPage : Shell
+    {
 
-		public MainPage()
-		{
-			InitializeComponent();
-		}
-	}
+
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
 }

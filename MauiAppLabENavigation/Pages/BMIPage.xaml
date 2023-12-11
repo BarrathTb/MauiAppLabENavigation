@@ -10,11 +10,11 @@
             VerticalOptions="Center">
 
                 <maui:Frame Padding="24" CornerRadius="10" Margin="10" BackgroundColor="OrangeRed">
-                    <maui:Label Text="The BMI Calculator" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+                    <maui:Label x:Name="TitleText_Bmi" Text="The BMI Calculator" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
                 </maui:Frame>
                 <maui:Label x:Name="Out_Text" Text="Find Your BMI" HorizontalTextAlignment="Center" FontSize="Title" Padding="30,10,30,10"/>
 
-                <maui:Button Text="Click Me" Clicked="Button_Clicked" BackgroundColor="blue" CornerRadius="10" Margin="10" ></maui:Button>
+                <maui:Button x:Name="Click_Me" Clicked="Button_Clicked" BackgroundColor="blue" CornerRadius="10" Margin="10" ></maui:Button>
                 <maui:Editor x:Name="In_Weight" Placeholder="Please Enter Your Weight in pounds" TextColor="Black"></maui:Editor>
                 <maui:Editor x:Name="In_Height" Placeholder="Please Enter Your Height in inches" TextColor="Black"></maui:Editor>
 

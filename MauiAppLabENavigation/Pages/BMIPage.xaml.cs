@@ -7,23 +7,24 @@ using System.Threading.Tasks;
 
 namespace MauiAppLabENavigation.Pages
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class BMIPage : ContentPage
-	{
-		public BMIPage()
-		{
-			InitializeComponent();
-		}
-		
-
-		void Button_Clicked(object sender, EventArgs e)
-		{
-			double weightInLbs = Convert.ToDouble(In_Weight.Text);
-			double heightInInches = Convert.ToDouble(In_Height.Text);
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class BMIPage : ContentPage
+    {
+        public BMIPage()
+        {
+            InitializeComponent();
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
+        }
 
 
-			double bmi = ((weightInLbs / (heightInInches * heightInInches)) * 703);
-			Out_Text.Text = bmi.ToString();
-		}
-	}
+        void Button_Clicked(object sender, EventArgs e)
+        {
+            double weightInLbs = Convert.ToDouble(In_Weight.Text);
+            double heightInInches = Convert.ToDouble(In_Height.Text);
+
+
+            double bmi = ((weightInLbs / (heightInInches * heightInInches)) * 703);
+            Out_Text.Text = bmi.ToString();
+        }
+    }
 }

@@ -1,12 +1,14 @@
 ﻿namespace MauiAppLabENavigation
 {
-	public partial class App : Application
-	{
-		public App()
-		{
-			InitializeComponent();
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
 
-			MainPage = new AppShell();
-		}
-	}
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
+
+            MainPage = new AppShell();
+        }
+    }
 }

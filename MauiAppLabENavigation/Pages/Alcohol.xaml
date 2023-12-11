@@ -7,7 +7,7 @@
     <maui:ContentPage.Content>
         <maui:StackLayout BackgroundColor="#F8F8F8">
             <maui:Frame BackgroundColor="#212121" CornerRadius="10" Margin="20" HasShadow="True">
-                <maui:Label Text="Are You Old Enough to Drink?" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                <maui:Label  x:Name="TitleText_drink" Text="Are You Old Enough to Drink?" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </maui:Frame>
 
             <maui:StackLayout Spacing="15">
@@ -15,7 +15,7 @@
                     <maui:Entry x:Name="AgeEntry" Placeholder="Enter your age"  FontSize="16" TextColor="White"/>
                 </maui:Frame>
 
-                <maui:Button  Text="Calculate" Clicked="CalculateButton_Clicked" BackgroundColor="#212121" TextColor="White" FontSize="20" CornerRadius="10" Margin="20" />
+                <maui:Button x:Name="calc" Text="Calculate" Clicked="CalculateButton_Clicked" BackgroundColor="#212121" TextColor="White" FontSize="20" CornerRadius="10" Margin="20" />
             </maui:StackLayout>
 
             <maui:Label x:Name="ResultLabel" TextColor="Black" FontSize="24" HorizontalTextAlignment="Center" Margin="20"/>
